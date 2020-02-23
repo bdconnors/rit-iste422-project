@@ -1,0 +1,5 @@
+apply plugin: 'java'
+task runEdgeConvert(type: JavaExec) {
+	main = 'src.java.RunEdgeConvert'
+	classpath = sourceSets.main.runtimeClasspath
+}
