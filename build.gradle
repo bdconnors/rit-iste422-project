@@ -1,0 +1,11 @@
+apply plugin: 'java'
+repositories {
+	mavenCentral()
+}
+dependencies {
+	testImplementation('junit:junit:4.13')
+}
+task runEdgeConvert(type: JavaExec) {
+	main = 'src.java.RunEdgeConvert'
+	classpath = sourceSets.main.runtimeClasspath
+}
